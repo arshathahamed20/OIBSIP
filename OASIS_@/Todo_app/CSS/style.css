@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{
+    background-image: url("./background.jpg");
+    min-width: 900px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    min-width: 900px;
+    padding:50px;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#231c1c;
+    border-radius: 40px;
+    color:#fff;
+}
+/* ul li
+{
+    list-style: none;   
+    margin-right: 40px;
+} */
+.inputs
+{
+    width:700px;
+    height:60px;
+    position: relative;
+}
+img
+{
+    position: absolute;
+    top:15px;
+    left:15px;
+    text-decoration: none;
+}
+.inputs input
+{
+    /* position: relative;
+    left:70px; */
+    width:100%;
+    height: 100%;
+    border-radius: 40px;
+    padding:0 20px 0 73px;
+    font-size: 30px;
+}
+.inputs input ::placeholder
+{   
+    
+    color:#bfbfbf;
+}
+.options
+{
+    margin-top: 30px;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.options,li
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.sec span
+{
+    margin:20px 20px 0 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sec span.active
+{
+    color:dodgerblue;
+}
+.sec :hover
+{
+    color:dodgerblue;
+}
+.options .clear
+{
+    border: none;
+    color:#fff;
+    border-radius: 5px;
+    padding:7px 15px;
+    background: red;
+    cursor:pointer;
+}
+.box
+{
+    margin:20px 25px;
+}
+.box .tasks
+{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+}
+.box label{
+    display: flex;
+}
+.box .tasks:last-child
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.box label input
+{
+    margin-right: 20px;
+}
+.tasks .settings
+{
+    cursor:pointer;
+}
+.uil-trash:hover
+{
+    color: #ff000087;
+}
+
+.tasks label p.checked
+{
+    text-decoration: line-through;
+}

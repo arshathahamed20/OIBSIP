@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    
+}
+body
+{
+    
+    min-height:100vh;
+    background-color: #0c192c;
+}
+.container
+{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+.bubbles
+{
+    position:relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width:30px;
+    height:30px;
+    background: #4fc3dc;
+    margin:0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #4fc3dc,0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #1b72b9;
+    box-shadow: 0 0 0 10px #0f033644,0 0 50px #23389f,0 0 100px #23389f;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0.2);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(0.7);
+    }
+}
+.main{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topic
+{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    color: aliceblue;
+    /* margin-top: 100px;; */
+}
+.calculator
+{
+    position: relative;
+    max-width: 350px;
+    width:100%;
+    padding:20px 20px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(1, 0, 0, 0.50);
+}
+.display
+{
+    height:80px;
+    width:100%;
+    outline : none;
+    border:none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 35px;
+
+}
+.buttons
+{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.buttons button
+{
+    padding:10px;
+    border-radius: 10px;
+    border:none;
+    font-size: 20px;
+    cursor:pointer;
+    background-color: #E5E4E2;
+}
+.buttons button:active
+{
+    transform: scale(1.05);
+}
+.operator
+{
+    color:dodgerblue;
+}
+.clear
+{
+    color:red;
+}

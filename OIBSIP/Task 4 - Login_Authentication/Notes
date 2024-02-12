@@ -1,0 +1,10 @@
+jijnja Templating
+{% if name == "name"%}
+Hi Arshaths
+{% else %}
+Who are you
+{% endif %}
+{% for x in [1,2,3,4,5]%}
+{{x}}
+{% endfor%}
+Template inheritance - create a base template and inherit from other

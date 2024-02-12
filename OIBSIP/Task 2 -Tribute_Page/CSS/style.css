@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*
+{
+    padding:0;
+    margin:0px;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+}
+.container
+{
+    /* color: #fff; */
+    width:100%;
+    font-family: 'Poppins',sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #002b80;
+    padding: 70px;
+
+    align-items: center;
+}
+.gap{
+    margin-bottom: 30px;
+}
+.topic
+{
+    font-size: 60px;
+}
+.heading
+{
+    text-align: center;
+    margin: 40px 80px;
+}
+.heading .title
+{
+    font-size: 60px;
+}
+.heading .sub-title
+{
+    margin: 40px 70px;
+    font-size: 25px;
+}
+.about,.records
+{
+    margin: 50px;
+} 
+ul.ab
+{
+    /* list-style-position: inside; */
+    font-size: 25px;
+    
+}
+.ab li
+{
+    margin-bottom: 20px;
+}
+.records 
+{
+    text-align: center;
+}
+.rec{
+    font-size: 22px;
+    width:500px;
+    list-style: decimal;
+    text-align: center;
+}
+.rec li
+{
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border:3px solid black;
+    border-collapse: collapse;
+    background-color: gray;
+  }
+table
+{
+    width: 90%;
+    margin: 70px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+th
+{
+    font-size: 25px;
+    padding:50px;
+}
+td
+{
+    text-align: center;
+    padding:20px;
+    font-size: 20px;
+}
+footer
+{
+    text-align: center;
+    font-size: 30px;
+    width:100%;
+    background-color: #001a4d;
+    padding: 20px;
+}
+@media  (min-width:730px) and (max-width : 1100px){
+.container
+{
+    width: 100%;
+}
+table,th,td
+{
+    font-size: 5px;
+    width: 100px;
+    height: 80px;
+    margin: 0 20px;
+}
+
+th
+{
+    font-size: 25px;
+    padding: -20px;
+}
+td
+{
+    /* width: 20px; */
+    font-size: 12px;
+    padding: 10px;
+}
+}
+@media  (min-width:500px) and (max-width : 730px)
+{
+    .container
+    {
+        width: 150%;
+    }
+    table,th,td
+    {
+        align-items: center;
+        font-size: 5px;
+        width: 100px;
+        height: 80px;
+        margin: auto auto;
+    }
+
+    th
+    {
+        font-size: 25px;
+        padding: -20px;
+    }
+    tr
+    {
+        width: 50px;
+    }
+    td
+    {
+        width: 20px;
+        font-size: 10px;
+        padding: -30px;
+    }
+    footer
+    {
+        width: 150%;
+    }
+    
+}
+@media  (min-width:300px) and (max-width : 500px)
+{
+    .container
+    {
+        width: 200%;
+    }
+    table,th,td
+    {
+        font-size: 10px;
+        width: 100px;
+        height: 80px;
+        margin: 0 60px;
+    }
+    footer
+    {
+        width: 200%;
+    }
+
+}
